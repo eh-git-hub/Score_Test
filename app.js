@@ -1,18 +1,17 @@
-let test1 = document.getElementById("test1");
-let test2 = document.getElementById("test2");
-let demo = document.getElementById("demo");
+let input1 = document.getElementById("input1");
+let input2 = document.getElementById("input2");
 
 function myFunction(){
-    console.log(test1.value);
-    console.log(test2.value);
-    demo1.innerHTML = `<p>Text: ${test1.value}<p>`
-    demo2.innerHTML = `<p>Text 2: ${test2.value}<p>`
+    console.log(input1.value);
+    console.log(input2.value);
+    demo1.innerHTML = `<p>Text 1: ${input1.value}<p>`
+    demo2.innerHTML = `<p>Text 2: ${input2.value}<p>`
 }
 
 let score = 0; 
 
 function scoreKeeper(){
-    if (test1.value == test2.value){
+    if (input1.value == input2.value){
         score += 10;
         document.getElementById("score").innerHTML = score;
         // console.log(score);
